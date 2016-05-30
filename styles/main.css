@@ -1,0 +1,260 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	border: 0;
+}
+
+.navWrapper {
+	position: relative;
+	width: 210px;
+	margin-top: 50px;
+	margin-left: 70px;
+}
+
+.navWrapper .navTitle {
+	height: 45px;
+	background-color: #B1191A;
+}
+
+.navWrapper .navTitle a {
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 10px;
+	font-size: 15px ;
+	font-weight: 400;
+	color: #fff;
+}
+
+
+.navWrapper .navMeun ul {
+	list-style: none;
+}
+
+.navWrapper .navMeun ul li {
+	height: 30px;
+	background-color: #C81623;
+	padding-left: 10px;
+	color: #fff;
+	border-left: 1px #C81623 solid;
+
+}
+
+.navWrapper .navMeun ul li.last {
+	border-bottom: 1px #C81623 solid;
+}
+
+.navWrapper .navMeun ul li h3 {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.navWrapper .navMeun ul li h3 a {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.navWrapper .navMeun ul li i {
+	display: inline-block;
+	float: right;
+	height: 30px;
+	margin-right: 10px;
+	font: 400 9px/30px consolas;
+}
+
+/* hover的效果 */
+.navWrapper .navMeun ul li:hover {
+	background-color: #f7f7f7;
+	color: #C81623;
+}
+
+.navWrapper .navMeun ul li:hover h3 a {
+	color: #C81623;
+}
+
+.navWrapper  ul li:hover i {
+	display: none;
+}
+
+/*悬浮页的设置*/
+.navWrapper .subMeun {
+	display: none;
+	position: absolute;
+	top: 44px;
+	left: 210px;
+	width: 530px;
+	height: 212px;
+	box-sizing: border-box;
+	padding: 10px;
+	border: 1px #C81623 solid;
+	border-left: none;
+	/* background-color: orange; */
+	font-weight: 400;
+	font-size: 12px;
+	background-color: #f7f7f7;
+}
+
+.navWrapper li:hover .subMeun {
+	display: block;
+} 
+
+.navWrapper .left {
+	float: left;
+	/* background-color: red; */
+}
+
+.navWrapper .subMeun .channels {
+	width: 360px;
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+.navWrapper .subMeun .channels li {
+	float: left;
+	height: 25px;
+	padding-left: 0;
+	border-left: none;
+	background-color: #fff;
+	margin-right: 8px;
+}
+
+.subMeun .channels li a {
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	color: #fff;
+	background-color: #7C7171;
+	padding-left: 5px;
+	
+}
+
+.subMeun .channels li a:hover {
+	background-color: #C81623;
+}
+
+.subMeun .channels li a i {
+	display: block;
+	margin: 0;
+	margin-left: 5px;
+	height: 25px;
+	width: 20px;
+	line-height: 25px;
+	text-align: center;
+	background: #5c5251;
+}
+
+.subMeun .channels li:hover a i {
+	display: block;
+	background: #B1191A;
+}
+
+.subMeun .details {
+	width: 360px;
+	height: 100px;
+	/* background-color: blue; */
+}
+
+.subMeun .details dl {
+	width: 360px;
+	height: 50px;
+	/* background: #333; */
+}
+
+.subMeun .details dl dt {
+	float: left;
+	width: 60px;
+	/* background: #999; */
+	line-height: 20px;
+}
+
+.subMeun .details dl dt a {
+	display: block;
+	float: right;
+	width: 60px;
+	height: 20px;
+	font-weight: 800;
+	color: #666;
+	text-align: right;
+}
+
+.subMeun .details dl dt i {
+	line-height: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+li:hover .subMeun .details dl dt i {
+	line-height: 20px;
+	display: block;
+}
+
+.subMeun .details dl dd {
+	float: left;
+	width: 300px;
+	line-height: 20px;
+	/* background: #666; */
+	border-bottom: 1px #e0e0e0 solid;
+	margin-bottom: 8px;
+}
+
+.subMeun .details dl dd.last {
+	border-bottom: none;
+}
+
+.subMeun .details dl dd a {
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 0 8px;
+	border-left: 1px #e0e0e0 solid;
+	margin-bottom: 8px;
+	color: #666;
+}
+
+.subMeun .details dl a:hover {
+	color: #C81623;
+}
+
+/* 图片广告区域 */
+.subMeun .images {
+	float: right;
+	width: 130px;
+	/* height: 100px; */
+	/* padding: 2px; */
+	/* background-color: green; */
+	
+}
+
+.subMeun .images .small {
+	height: 55px;
+	margin-bottom: 3px;
+}
+
+.subMeun .images .small img {
+	display: block;
+	float: left;
+	width: 64px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+
+.subMeun .images .big img {
+	display: block;
+	width: 130px;
+}
